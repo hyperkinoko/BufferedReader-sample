@@ -13,7 +13,8 @@ public class App {
             int ham = Integer.parseInt(stringArray[0]);
             int lettuce = Integer.parseInt(stringArray[1]);
 
-            String size = ham + lettuce >= 100 ? "Large" : "Regular";
+            // 三項演算子が生きるケース
+            String size = ham + lettuce < 100 ? "Regular" : "Large";
             String vegi = ham < lettuce ? "Vegi" : "Ham";
 
             // printfを使うとスムーズ
